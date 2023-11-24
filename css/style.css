@@ -147,6 +147,9 @@ button {
     border-bottom: 1px solid var(--border-color);
     padding: 12px 0;
     margin-bottom: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
 .pr-secondary-navbar .navbar-nav {
     flex-direction: row;
@@ -628,7 +631,7 @@ button {
 .pr-favourites-section {
     margin-bottom: 60px;
 }
-.pr-favourites-section .pr-section-title {
+.pr-page-section .pr-section-title {
     margin-bottom: 40px;
 }
 .pr-btn-like {
@@ -641,4 +644,122 @@ button {
 }
 .pr-btn-like:hover svg path {
     stroke: #E73127;
+}
+/* News page */
+.pr-page-section .pr-new-info {
+    margin-bottom: 40px;
+}
+.pr-new-page-section {
+    margin-bottom: 80px;
+}
+/* Brends */
+.pr-brands-nav {
+    background-color: var(--white-color);
+    border: 1px solid #E8E7EC;
+    border-radius: 8px;
+    padding: 4px;
+    margin-bottom: 40px;
+}
+.pr-brands-nav .navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pr-brands-nav .navbar-nav .nav-link {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 13px;
+}
+.pr-brands-nav .navbar-nav .nav-link:hover {
+    background-color: #E5F4FF;
+    border-radius: 4px;
+    color: var(--active-color);
+}
+.pr-brands-nav .navbar-nav .active {
+    background-color: #E5F4FF;
+    border-radius: 4px;
+    color: var(--active-color);
+}
+.pr-brends-first-let {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 12px;
+}
+.pr-page-section .pr-brends-list {
+    margin-bottom: 60px;
+}
+.pr-brend-page {
+    padding-bottom: 60px;
+}
+.pr-new-info-section-inner {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.pr-new-info-sec-img img {
+    height: 500px;
+    border-radius: 12px;
+    width: 100%;
+    object-fit: cover;
+}
+.pr-new-info-sec-img {
+    margin-bottom: 24px;
+}
+.pr-new-info-date {
+    font-weight: 400;
+    color: #74708E;
+    margin-bottom: 8px;
+}
+.pr-new-info-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    color: #171142;
+    margin-bottom: 24px;
+}
+.pr-new-info-paragraph {
+    font-weight: 400;
+    color: #454168;
+    margin-bottom: 24px;
+}
+.pr-new-info-paragraph:last-child {
+    margin-bottom: 0;
+}
+.pr-vacancy-wrapper {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 120px;
+}
+.pr-vacancy-wrapper .pr-section-title {
+    margin-bottom: 40px;
+}
+/* Vacancy */
+.pr-vacancy-item {
+    border: 1px solid #E8E7EC;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+.pr-vacancy-item:last-child {
+    margin-bottom: 0;
+}
+.pr-vacancy-info {
+    display: flex;
+    justify-content: space-between;
+}
+.pr-vacancy-info .pr-vacancy-title {
+    font-size: 20px;
+    line-height: 28px;
+}
+.pr-vacancy-info .pr-vacancy-published,
+.pr-vacancy-info .pr-vacancy-place {
+    font-weight: 400;
+    color: #74708E;
+}
+.pr-vacancy-department {
+    color: #74708E;
+}
+.pr-vacancy-info:first-child {
+    margin-bottom: 16px;
 }
