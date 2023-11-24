@@ -37,6 +37,33 @@ button {
     font-weight: 500;
     padding: 6px 24px;
 }
+/* Breadcrumb */
+.breadcrumb-item+.breadcrumb-item::before {
+    content: none;
+}
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.pr-breadcrumb a svg {
+    margin-left: 8px;
+}
+.pr-breadcrumb a,
+.breadcrumb .active {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.pr-breadcrumb a {
+    color: #74708E;
+}
+.breadcrumb .active {
+    color: #171142;
+}
+.pr-breadcrumb a:hover {
+    color: var(--active-color);
+}
 /* Navbar */
 .pr-navbar-phone {
     font-size: 14px;
@@ -596,4 +623,22 @@ button {
 }
 .form-control {
     height: 40px;
+}
+/* Favourites */
+.pr-favourites-section {
+    margin-bottom: 60px;
+}
+.pr-favourites-section .pr-section-title {
+    margin-bottom: 40px;
+}
+.pr-btn-like {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.pr-btn-like:hover svg {
+    fill: #E73127;
+}
+.pr-btn-like:hover svg path {
+    stroke: #E73127;
 }
