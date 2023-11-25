@@ -812,3 +812,79 @@ button {
 .pr-main-wrapper {
     margin-bottom: 120px;
 }
+.pr-inner-vacancy-wrapper {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.pr-inner-vacancy-wrapper .pr-vacancy-published {
+    font-weight: 400;
+    color: #74708E;
+    margin-bottom: 8px;
+}
+.pr-inner-vacancy-wrapper .pr-vacancy-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    color: #171142;
+    margin-bottom: 24px;
+}
+.pr-inner-vacancy-wrapper .pr-vacancy-text {
+    font-weight: 400;
+    color: #454168;
+    margin-bottom: 40px;
+}
+.pr-inner-vacancy-wrapper .pr-vacancy-subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 8px;
+    color: #171142;
+}
+.pr-inner-vacancy-wrapper .pr-vacancy-text-list .pr-vacancy-text {
+    margin-bottom: 0;
+}
+.pr-inner-vacancy-wrapper .pr-vacancy-text-list {
+    margin-bottom: 40px;
+}
+.pr-inner-vacancy-wrapper .pr-vacancy-text:last-child {
+    margin-bottom: 0;
+}
+.pr-request-vacancy-wrapper {
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #E8E7EC;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: var(--white-color);
+}
+.pr-request-vacancy-wrapper .pr-contact-inner {
+    padding-right: 0;
+}
+.pr-request-vacancy-wrapper .pr-contact-inner .pr-section-title {
+    margin-bottom: 24px;
+}
+.pr-form-resume {
+    display: flex;
+    justify-content: space-between;
+}
+.pr-form-resume .pr-form-resume-desc {
+    font-size: 14px;
+    line-height: 20px;
+    color: #74708E;
+}
+.pr-resume-loading {
+    display: flex;
+    align-items: center;
+}
+.pr-resume-loading .pr-resume-loading-btn {
+    color: var(--active-color);
+}
+.pr-resume-loading .pr-resume-loading-btn:hover {
+    background-color: #E5F4FF;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+.pr-form-resume {
+    margin-bottom: 24px;
+}
