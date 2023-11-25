@@ -325,6 +325,9 @@ button {
     padding-right: .625rem;
     margin-bottom: 56px;
 }
+.pr-product-item:hover .pr-product-img img {
+    transform: scale(1.05);
+    }
 .pr-products-list .pr-product-item .pr-product-title {
     color: #171142;
     height: 48px;
@@ -513,12 +516,14 @@ button {
     height: 100%;
     object-fit: cover;
 }
+.pr-new-info-desc {
+    height: 56px;
+    overflow: hidden;
+}
 .pr-new-info-desc a {
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
-    height: 56px;
-    overflow: hidden;
     color: #171142;
 }
 .pr-new-info-desc a:hover {
@@ -766,4 +771,44 @@ button {
 }
 .pr-vacancy-info:first-child {
     margin-bottom: 16px;
+}
+.pr-contact-page-section {
+    max-width: 800px;
+    margin: auto;
+}
+.pr-contact-region {
+    line-height: 28px;
+    margin-bottom: 12px;
+    color: #171142;
+}
+.pr-contact-phone {
+    margin-bottom: 12px;
+}
+.pr-contact-phone a,
+.pr-contact-full-address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #74708E;
+}
+.pr-contact-phone a:hover {
+    color: var(--active-color);
+}
+.pr-contact-content {
+    padding: 56px 40px;
+}
+.pr-contact-wrapper {
+    border: 1px solid #E8E7EC;
+    border-radius: 8px;
+    background-color: var(--white-color);
+    margin-bottom: 24px;
+}
+.pr-contact-wrapper:last-child {
+    margin-bottom: 0;
+}
+.pr-contact-page-section .pr-section-title {
+    margin-bottom: 40px;
+}
+.pr-main-wrapper {
+    margin-bottom: 120px;
 }
