@@ -659,6 +659,9 @@ button {
     border-radius: 8px;
     padding: 4px;
     margin-bottom: 40px;
+    position: sticky;
+    top: 70px;
+    z-index: 99;
 }
 .pr-brands-nav .navbar-nav {
     flex-direction: row;
@@ -668,16 +671,17 @@ button {
     font-size: 14px;
     line-height: 20px;
     padding: 8px 13px;
+    color: var(--main-color);
 }
-.pr-brands-nav .navbar-nav .nav-link:hover {
+.pr-brands-nav .nav-pills .nav-link:hover {
     background-color: #E5F4FF;
     border-radius: 4px;
     color: var(--active-color);
 }
-.pr-brands-nav .navbar-nav .active {
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--active-color);
     background-color: #E5F4FF;
     border-radius: 4px;
-    color: var(--active-color);
 }
 .pr-brends-first-let {
     font-weight: 600;
