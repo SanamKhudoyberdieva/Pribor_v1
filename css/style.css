@@ -888,3 +888,39 @@ button {
 .pr-form-resume {
     margin-bottom: 24px;
 }
+.pr-category-modal .modal-content {
+    background-color: var(--dark-white-color);
+}
+.pr-category-modal header {
+    margin-bottom: 24px;
+}
+.pr-category-modal-item .pr-category-modal-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #171142;
+    margin-bottom: 20px;
+}
+.pr-category-modal-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto
+}
+.pr-category-modal-list .pr-category-modal-item {
+    max-height: min-content;
+    margin-bottom: 48px;
+}
+.pr-category-modal-item .nav-item a {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0;
+    color: #454168;
+}
+.pr-category-modal-item .nav-item a:hover {
+    color: var(--active-color);
+}
+.pr-category-modal-item .nav-item {
+    margin-bottom: 12px;
+}
+.pr-category-modal-item .nav-item:last-child {
+    margin-bottom: 0;
+}
