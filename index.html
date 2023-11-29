@@ -86,14 +86,14 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#logIn">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20.8401 4.61012C20.3294 4.09912 19.7229 3.69376 19.0555 3.4172C18.388 3.14064 17.6726 2.99829 16.9501 2.99829C16.2276 2.99829 15.5122 3.14064 14.8448 3.4172C14.1773 3.69376 13.5709 4.09912 13.0601 4.61012L12.0001 5.67012L10.9401 4.61012C9.90843 3.57842 8.50915 2.99883 7.05012 2.99883C5.59109 2.99883 4.19181 3.57842 3.16012 4.61012C2.12843 5.64181 1.54883 7.04108 1.54883 8.50012C1.54883 9.95915 2.12843 11.3584 3.16012 12.3901L4.22012 13.4501L12.0001 21.2301L19.7801 13.4501L20.8401 12.3901C21.3511 11.8794 21.7565 11.2729 22.033 10.6055C22.3096 9.93801 22.4519 9.2226 22.4519 8.50012C22.4519 7.77763 22.3096 7.06222 22.033 6.39476C21.7565 5.7273 21.3511 5.12087 20.8401 4.61012V4.61012Z" stroke="#454168" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#logIn">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cart">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#454168" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#454168" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -879,6 +879,223 @@
         </div>
     </div>
 
+    <!-- Cart modal -->
+    <div class="modal fade pr-modals" id="cart" tabindex="-1" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="cartLabel">Корзина <span>(2)</span></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="pr-cart-list">
+                    <div class="pr-cart-item">
+                        <div class="pr-cart-item-img">
+                            <img src="./img/product1.jpg" class="img-fluid" alt="product">
+                        </div>
+                        <div class="pr-cart-item-content">
+                            <h5 class="pr-cart-item-title">Манометры общетехнические ДМ8010-Уф</h5>
+                            <div class="pr-cart-item-desc">Трансформатор тока (ТОЛ)ТЛК-СТ-10-ТЛМ1 (ТЛМ-10-1) опорный, предназначен для передачи сигнала измерительной информации измерительным приборам и устройствам защиты и управления, для изолирования цепей вторичных соединений от высокого напряжения.</div>
+                            <div class="pr-cart-item-action">
+                                <div class="pr-cart-item-control">
+                                    <button class="btn pr-btn-counter btn-minus">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M4.16699 10H15.8337" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <span class="pr-cart-item-quantity">1</span>
+                                    <button class="btn pr-btn-counter btn-plus">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M10 4.16675V15.8334" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.16699 10H15.8337" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="btn pr-btn-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M2.5 5H4.16667H17.5" stroke="#E73127" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.66699 5.00008V3.33341C6.66699 2.89139 6.84259 2.46746 7.15515 2.1549C7.46771 1.84234 7.89163 1.66675 8.33366 1.66675H11.667C12.109 1.66675 12.5329 1.84234 12.8455 2.1549C13.1581 2.46746 13.3337 2.89139 13.3337 3.33341V5.00008M15.8337 5.00008V16.6667C15.8337 17.1088 15.6581 17.5327 15.3455 17.8453C15.0329 18.1578 14.609 18.3334 14.167 18.3334H5.83366C5.39163 18.3334 4.96771 18.1578 4.65515 17.8453C4.34259 17.5327 4.16699 17.1088 4.16699 16.6667V5.00008H15.8337Z" stroke="#E73127" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pr-cart-item">
+                        <div class="pr-cart-item-img">
+                            <img src="./img/product2.jpg" class="img-fluid" alt="product">
+                        </div>
+                        <div class="pr-cart-item-content">
+                            <h5 class="pr-cart-item-title">Манометры общетехнические ДМ8010-Уф</h5>
+                            <div class="pr-cart-item-desc">Трансформатор тока (ТОЛ)ТЛК-СТ-10-ТЛМ1 (ТЛМ-10-1) опорный, предназначен для передачи сигнала измерительной информации измерительным приборам и устройствам защиты и управления, для изолирования цепей вторичных соединений от высокого напряжения.</div>
+                            <div class="pr-cart-item-action">
+                                <div class="pr-cart-item-control">
+                                    <button class="btn pr-btn-counter btn-minus">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M4.16699 10H15.8337" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <span class="pr-cart-item-quantity">1</span>
+                                    <button class="btn pr-btn-counter btn-plus">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M10 4.16675V15.8334" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.16699 10H15.8337" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="btn pr-btn-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M2.5 5H4.16667H17.5" stroke="#E73127" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.66699 5.00008V3.33341C6.66699 2.89139 6.84259 2.46746 7.15515 2.1549C7.46771 1.84234 7.89163 1.66675 8.33366 1.66675H11.667C12.109 1.66675 12.5329 1.84234 12.8455 2.1549C13.1581 2.46746 13.3337 2.89139 13.3337 3.33341V5.00008M15.8337 5.00008V16.6667C15.8337 17.1088 15.6581 17.5327 15.3455 17.8453C15.0329 18.1578 14.609 18.3334 14.167 18.3334H5.83366C5.39163 18.3334 4.96771 18.1578 4.65515 17.8453C4.34259 17.5327 4.16699 17.1088 4.16699 16.6667V5.00008H15.8337Z" stroke="#E73127" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pr-cart-item">
+                        <div class="pr-cart-item-img">
+                            <img src="./img/product3.jpg" class="img-fluid" alt="product">
+                        </div>
+                        <div class="pr-cart-item-content">
+                            <h5 class="pr-cart-item-title">Манометры общетехнические ДМ8010-Уф</h5>
+                            <div class="pr-cart-item-desc">Трансформатор тока (ТОЛ)ТЛК-СТ-10-ТЛМ1 (ТЛМ-10-1) опорный, предназначен для передачи сигнала измерительной информации измерительным приборам и устройствам защиты и управления, для изолирования цепей вторичных соединений от высокого напряжения.</div>
+                            <div class="pr-cart-item-action">
+                                <div class="pr-cart-item-control">
+                                    <button class="btn pr-btn-counter btn-minus">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M4.16699 10H15.8337" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <span class="pr-cart-item-quantity">1</span>
+                                    <button class="btn pr-btn-counter btn-plus">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M10 4.16675V15.8334" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.16699 10H15.8337" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="btn pr-btn-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M2.5 5H4.16667H17.5" stroke="#E73127" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.66699 5.00008V3.33341C6.66699 2.89139 6.84259 2.46746 7.15515 2.1549C7.46771 1.84234 7.89163 1.66675 8.33366 1.66675H11.667C12.109 1.66675 12.5329 1.84234 12.8455 2.1549C13.1581 2.46746 13.3337 2.89139 13.3337 3.33341V5.00008M15.8337 5.00008V16.6667C15.8337 17.1088 15.6581 17.5327 15.3455 17.8453C15.0329 18.1578 14.609 18.3334 14.167 18.3334H5.83366C5.39163 18.3334 4.96771 18.1578 4.65515 17.8453C4.34259 17.5327 4.16699 17.1088 4.16699 16.6667V5.00008H15.8337Z" stroke="#E73127" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pr-cart-item">
+                        <div class="pr-cart-item-img">
+                            <img src="./img/product4.jpg" class="img-fluid" alt="product">
+                        </div>
+                        <div class="pr-cart-item-content">
+                            <h5 class="pr-cart-item-title">Манометры общетехнические ДМ8010-Уф</h5>
+                            <div class="pr-cart-item-desc">Трансформатор тока (ТОЛ)ТЛК-СТ-10-ТЛМ1 (ТЛМ-10-1) опорный, предназначен для передачи сигнала измерительной информации измерительным приборам и устройствам защиты и управления, для изолирования цепей вторичных соединений от высокого напряжения.</div>
+                            <div class="pr-cart-item-action">
+                                <div class="pr-cart-item-control">
+                                    <button class="btn pr-btn-counter btn-minus">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M4.16699 10H15.8337" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <span class="pr-cart-item-quantity">1</span>
+                                    <button class="btn pr-btn-counter btn-plus">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M10 4.16675V15.8334" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.16699 10H15.8337" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="btn pr-btn-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M2.5 5H4.16667H17.5" stroke="#E73127" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.66699 5.00008V3.33341C6.66699 2.89139 6.84259 2.46746 7.15515 2.1549C7.46771 1.84234 7.89163 1.66675 8.33366 1.66675H11.667C12.109 1.66675 12.5329 1.84234 12.8455 2.1549C13.1581 2.46746 13.3337 2.89139 13.3337 3.33341V5.00008M15.8337 5.00008V16.6667C15.8337 17.1088 15.6581 17.5327 15.3455 17.8453C15.0329 18.1578 14.609 18.3334 14.167 18.3334H5.83366C5.39163 18.3334 4.96771 18.1578 4.65515 17.8453C4.34259 17.5327 4.16699 17.1088 4.16699 16.6667V5.00008H15.8337Z" stroke="#E73127" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pr-cart-item">
+                        <div class="pr-cart-item-img">
+                            <img src="./img/product5.jpg" class="img-fluid" alt="product">
+                        </div>
+                        <div class="pr-cart-item-content">
+                            <h5 class="pr-cart-item-title">Манометры общетехнические ДМ8010-Уф</h5>
+                            <div class="pr-cart-item-desc">Трансформатор тока (ТОЛ)ТЛК-СТ-10-ТЛМ1 (ТЛМ-10-1) опорный, предназначен для передачи сигнала измерительной информации измерительным приборам и устройствам защиты и управления, для изолирования цепей вторичных соединений от высокого напряжения.</div>
+                            <div class="pr-cart-item-action">
+                                <div class="pr-cart-item-control">
+                                    <button class="btn pr-btn-counter btn-minus">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M4.16699 10H15.8337" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <span class="pr-cart-item-quantity">1</span>
+                                    <button class="btn pr-btn-counter btn-plus">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M10 4.16675V15.8334" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.16699 10H15.8337" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="btn pr-btn-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M2.5 5H4.16667H17.5" stroke="#E73127" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.66699 5.00008V3.33341C6.66699 2.89139 6.84259 2.46746 7.15515 2.1549C7.46771 1.84234 7.89163 1.66675 8.33366 1.66675H11.667C12.109 1.66675 12.5329 1.84234 12.8455 2.1549C13.1581 2.46746 13.3337 2.89139 13.3337 3.33341V5.00008M15.8337 5.00008V16.6667C15.8337 17.1088 15.6581 17.5327 15.3455 17.8453C15.0329 18.1578 14.609 18.3334 14.167 18.3334H5.83366C5.39163 18.3334 4.96771 18.1578 4.65515 17.8453C4.34259 17.5327 4.16699 17.1088 4.16699 16.6667V5.00008H15.8337Z" stroke="#E73127" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pr-cart-item">
+                        <div class="pr-cart-item-img">
+                            <img src="./img/product6.jpg" class="img-fluid" alt="product">
+                        </div>
+                        <div class="pr-cart-item-content">
+                            <h5 class="pr-cart-item-title">Манометры общетехнические ДМ8010-Уф</h5>
+                            <div class="pr-cart-item-desc">Трансформатор тока (ТОЛ)ТЛК-СТ-10-ТЛМ1 (ТЛМ-10-1) опорный, предназначен для передачи сигнала измерительной информации измерительным приборам и устройствам защиты и управления, для изолирования цепей вторичных соединений от высокого напряжения.</div>
+                            <div class="pr-cart-item-action">
+                                <div class="pr-cart-item-control">
+                                    <button class="btn pr-btn-counter btn-minus">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M4.16699 10H15.8337" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <span class="pr-cart-item-quantity">1</span>
+                                    <button class="btn pr-btn-counter btn-plus">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M10 4.16675V15.8334" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.16699 10H15.8337" stroke="#A2A0B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="btn pr-btn-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M2.5 5H4.16667H17.5" stroke="#E73127" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.66699 5.00008V3.33341C6.66699 2.89139 6.84259 2.46746 7.15515 2.1549C7.46771 1.84234 7.89163 1.66675 8.33366 1.66675H11.667C12.109 1.66675 12.5329 1.84234 12.8455 2.1549C13.1581 2.46746 13.3337 2.89139 13.3337 3.33341V5.00008M15.8337 5.00008V16.6667C15.8337 17.1088 15.6581 17.5327 15.3455 17.8453C15.0329 18.1578 14.609 18.3334 14.167 18.3334H5.83366C5.39163 18.3334 4.96771 18.1578 4.65515 17.8453C4.34259 17.5327 4.16699 17.1088 4.16699 16.6667V5.00008H15.8337Z" stroke="#E73127" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pr-empty-block d-none">
+                    <div class="pr-empty-block-inner">
+                        <div class="pr-empty-img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M8 2.66675L4 8.00008V26.6667C4 27.374 4.28095 28.0523 4.78105 28.5524C5.28115 29.0525 5.95942 29.3334 6.66667 29.3334H25.3333C26.0406 29.3334 26.7189 29.0525 27.219 28.5524C27.719 28.0523 28 27.374 28 26.6667V8.00008L24 2.66675H8Z" stroke="#0096FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.3337 13.3333C21.3337 14.7477 20.7718 16.1043 19.7716 17.1045C18.7714 18.1047 17.4148 18.6666 16.0003 18.6666C14.5858 18.6666 13.2293 18.1047 12.2291 17.1045C11.2289 16.1043 10.667 14.7477 10.667 13.3333" stroke="#0096FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 8H28" stroke="#0096FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h2 class="pr-empty-title">В корзине пока нет товаров</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-0">
+                <button class="btn pr-btn-primary w-100 m-0">Отправить заявку</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <!-- Category Modal -->
     <div class="modal fade pr-category-modal" id="category" tabindex="-1" aria-labelledby="categoryLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
@@ -1148,7 +1365,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
