@@ -1,0 +1,496 @@
+:root {
+    --main-color: #454168;
+    --active-color: #0096FF;
+    --border-color: #E4E8F4;
+    --white-color: #FFFFFF;
+    --dark-white-color: #F8F9FC;
+}
+
+@media (min-width: 1440px) {
+    .pr-sm-navbar,
+    .pr-sm-main-navbar,
+    .pr-footer-socials-sm,
+    .pr-vacancy-published-sm,
+    .pr-filter-sm {
+        display: none;
+    }
+    .pr-sm-contact-map {
+        display: none;
+    }
+    .pr-category-page-products .pr-btn-light {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1440px) {
+    .pr-sm-navbar,
+    .pr-sm-main-navbar,
+    .pr-footer-socials-sm,
+    .pr-vacancy-published-sm,
+    .pr-filter-sm {
+        display: none;
+    }
+    .pr-sm-contact-map {
+        display: none;
+    }
+    .pr-main-search {
+        min-width: 500px;
+    }
+    .pr-category-page-products .pr-btn-light {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sm-hide {
+        display: none;
+    }
+    .breadcrumb {
+        margin-bottom: 40px;
+    }
+    .pr-contact-page-section .pr-section-title {
+        margin-bottom: 16px;
+    }
+    .pr-section-title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .pr-contact-content {
+        padding: 16px;
+    }
+    .pr-contact-wrapper {
+        margin-bottom: 40px;
+    }
+    .pr-main-wrapper {
+        margin-bottom: 64px;
+    }
+    .pr-footer-top {
+        padding: 24px 0 40px 0;
+    }
+    .pr-footer-phone a, .pr-footer-address {
+        font-size: 12px;
+        line-height: 16px;
+        width: 250px;
+    }
+    .pr-footer-address {
+        margin-bottom: 24px;
+    }
+    .pr-footer-link .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .pr-lang-dropdown .btn img {
+        margin-right: 0;
+    }
+    .pr-sm-navbar {
+        margin-bottom: 16px;
+        padding: 0;
+    }
+    .pr-sm-search {
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        border: 1px solid #E4E8F4;
+        background: #F8F9FC;
+        padding: 8px 16px 8px 12px;
+        width: 85%;
+    }
+    .pr-sm-search input {
+        border: none;
+        background-color: inherit;
+        padding: 0;
+        height: 20px;
+    }
+    .pr-sm-search svg {
+        margin-right: 8px;
+    }
+    .pr-sm-search input::placeholder {
+        color: #A2A0B3;
+    }
+    .form-control:focus {
+        background-color: inherit;
+        box-shadow: none;
+    }
+    .pr-btn-sm-category {
+        padding-left: 0;
+    }
+    .pr-header {
+        background-color: #FFF;
+        margin-bottom: 24px;
+        padding: 12px 0;
+    }
+    .pr-main-carousel .carousel-control-prev-icon, 
+    .pr-main-carousel .carousel-control-next-icon {
+        display: none;
+    }
+    .pr-main-carousel .carousel-item .img-fluid {
+        height: 136px;
+    }
+    .carousel-indicators {
+        bottom: -33%;
+    }
+    .pr-main-carousel {
+        margin-bottom: 30px;
+    }
+    .pr-products-slick .carousel-control-prev-icon,
+    .pr-products-slick .carousel-control-next-icon {
+        display: none !important;
+    }
+    .pr-product-title {
+        height: fit-content;
+    }
+    .pr-product-title a {
+        font-size: 12px;
+        line-height: 16px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        align-self: stretch;
+    }
+    .pr-product-wrapper {
+        padding: 6px;
+    }
+    .pr-product-img {
+        margin-bottom: 12px;
+    }
+    .pr-products-slider {
+        margin-bottom: 60px;
+    }
+    .pr-section-header {
+        margin-bottom: 10px;
+    }
+    .pr-products-list .pr-product-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 32px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .pr-new-products .pr-products-list .pr-product-item {
+        margin-bottom: 32px;
+    }
+    .pr-products-list .pr-product-item:nth-last-child(-n+2) {
+        margin-bottom: 0;
+    }
+    .pr-products-list .pr-product-item .pr-product-title a {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .pr-products-list .pr-product-item .pr-product-title {
+        height: 40px;
+        margin-bottom: 12px;
+    }
+    .pr-product-desc {
+        font-size: 12px;
+        line-height: 16px;
+        height: 32px;
+        margin-bottom: 12px;
+    }
+    .pr-top-products {
+        margin-bottom: 60px;
+    }
+    .pr-product-item-new {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+    .pr-product-new-desc {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 8px;
+        width: 169px;
+    }
+    .pr-product-new-title {
+        font-size: 18px;
+        line-height: 24px;
+        width: 80px;
+    }
+    .pr-product-item-new-inner {
+        padding: 24px 16px;
+    }
+    .pr-new-sign {
+        margin-bottom: 0px !important;
+    }
+    .pr-new-products .pr-product-title {
+        margin-top: 12px;
+    }
+    .pr-section {
+        margin-bottom: 60px;
+    }
+    .pr-brends-list {
+        overflow-x: scroll;
+    }
+    .pr-brend-item {
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+        padding-left: 6px;
+        padding-right: 6px;
+        margin-bottom: 16px;
+    }
+    .pr-brend-img .img-fluid {
+        height: 80px;
+        margin-bottom: 8px;
+    }
+    .pr-sm-main-navbar {
+        padding: 0;
+    }
+    .pr-brend-item:nth-last-child(-n+6) {
+        margin-bottom: 16px;
+    }
+    .pr-brend-item:nth-last-child(-n+3) {
+        margin-bottom: 0px;
+    }
+    .pr-contact-row {
+        padding: 24px 0;
+        height: 100%;
+    }
+    .pr-full-right-half {
+        position: relative;
+        width: 100%;
+        height: 150%;
+        top: unset;
+    }
+    .pr-contact-inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 0px;
+    }
+    .pr-contact-row .container .row {
+        height: 100%;
+    }
+    .pr-contact-row .container {
+        height: 100%;
+    }
+    .pr-contact-row .pr-section-title {
+        margin-bottom: 16px;
+    }
+    .pr-form-group .form-label {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .pr-contact-inner .pr-submit-btn {
+        margin-bottom: 16px;
+    }
+    .pr-sm-contact-map {
+        margin-bottom: 16px;
+    }
+    .pr-contact-inner .pr-submit-btn {
+        margin-bottom: 0;
+    }
+    .pr-new-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        margin-bottom: 24px;
+    }
+    .pr-new-info:last-child {
+        margin-bottom: 0;
+    }
+    .pr-new-info-img {
+        height: 214px;
+    }
+    .pr-new-info-desc {
+        height: 40px;
+    }
+    .pr-new-info-desc a {
+        font-size: 14px;
+        line-height: 20px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+    .pr-new-info-img {
+        margin-bottom: 12px;
+    }
+    .pr-new-info-section {
+        margin-bottom: 60px;
+    }
+    .pr-footer-logo {
+        margin-bottom: 12px;
+    }
+    .pr-footer-logo svg {
+        height: 32px;
+    }
+    .custom-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .custom-col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 24px;
+    }
+    .pr-footer-link a {
+        font-size: 16px;
+    }
+    .pr-footer-link {
+        margin-bottom: 16px;
+    }
+    .pr-footer-link:last-child {
+        margin-bottom: 0;
+    }
+    .pr-footer-link .nav-item {
+        margin-bottom: 8px;
+    }
+    .pr-footer-link .nav-item:last-child {
+        margin-bottom: 0;
+    }
+    .pr-footer-socials {
+        display: none;
+    }
+    .pr-footer-bottom-wrp {
+        flex-direction: column;
+        padding: 16px 0;
+    }
+    .pr-footer-socials-sm .nav-link {
+        padding: 0;
+    }
+    .pr-footer-socials-sm .nav-item {
+        margin-right: 20px;
+    }
+    .pr-footer-socials-sm .nav-item:last-child {
+        margin-right: 0;
+    }
+    .pr-footer-socials-sm {
+        margin-bottom: 16px;
+    }
+    .es-footer-copyright {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .pr-new-page-section .pr-new-info-desc a  {
+        font-weight: 600;
+    }
+    .pr-new-page-section .pr-new-info {
+        margin-bottom: 24px;
+    }
+    .pr-new-page-section .pr-new-info:last-child {
+        margin-bottom: 0;
+    }
+    .pr-new-info-sec-img img {
+        height: 214px;
+    }
+    .pr-breadcrumb .breadcrumb {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .pr-breadcrumb .breadcrumb-item a {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .pr-breadcrumb .breadcrumb-item:last-child {
+        height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .pr-new-info-date {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        margin-bottom: 8px;
+    }
+    .pr-new-info-title {
+        margin-bottom: 16px;
+        font-size: 22px;
+        line-height: 30px; 
+    }
+    .pr-vacancy-item {
+        padding: 16px;
+        margin-bottom: 24px;
+    }
+    .pr-vacancy-info {
+        flex-direction: column;
+    }
+    .pr-vacancy-published-sm {
+        color:#74708E;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 4px;
+    }
+    .pr-vacancy-info .pr-vacancy-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .pr-vacancy-info:last-child {
+        flex-direction: row;
+    }
+    .pr-vacancy-department,
+    .pr-vacancy-place {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .pr-inner-vacancy-wrapper .pr-vacancy-title {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 16px;
+    }
+    .pr-inner-vacancy-wrapper .pr-vacancy-text {
+        margin-bottom: 64px;
+    }
+    .pr-inner-vacancy-wrapper .pr-vacancy-subtitle {
+        margin-bottom: 16px;
+    }
+    .pr-request-vacancy-wrapper {
+        padding: 40px 16px;
+    }
+    .pr-contact-inner .pr-section-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .pr-contact-map {
+        padding: 16px;
+    }
+    .pr-category-page-aside {
+        display: none;
+    }
+    .pr-nav-pills {
+        display: none;
+    }
+    .pr-filter-sm svg:hover path {
+        stroke: var(--active-color);
+    }
+    .pr-tab-content {
+        margin-bottom: 16px;
+    }
+    .pr-btn-light {
+        background-color: #FFFFFF;
+        color: var(--active-color);
+        padding: 7px 24px;
+    }
+    .pr-btn-light:hover {
+        background-color: var(--active-color);
+        color: #FFFFFF;
+    }
+    #cart .modal-fullscreen {
+        width: 100vw;
+    }
+    #FilterModal .modal-dialog {
+        margin: 0;
+    }
+    #FilterModal .pr-category-page-aside {
+        display: flex;
+    }
+    .pr-category-modal-list {
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 32px;
+    }
+    #categorySM .modal-body {
+        padding: 0;
+    }
+    .pr-category-modal-item .nav-item {
+        margin-bottom: 20px;
+    }
+    #categorySM .pr-header {
+        margin-bottom: 0;
+    }
+} 
