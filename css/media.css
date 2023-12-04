@@ -493,4 +493,9 @@
     #categorySM .pr-header {
         margin-bottom: 0;
     }
+    .pr-lang-dropdown .dropdown-menu {
+        min-width: 150px;
+        top: 30px;
+        left: -130px;
+    }
 } 

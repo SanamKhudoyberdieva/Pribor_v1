@@ -92,6 +92,8 @@ button {
     min-width: 168px;
     border: 1px solid var(--border-color);
     border-radius: 8px;
+    top: 30px;
+    left: -50px;
 }
 .pr-lang-dropdown .dropdown-menu .dropdown-item {
     font-weight: 500;
