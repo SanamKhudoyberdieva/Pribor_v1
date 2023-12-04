@@ -498,4 +498,11 @@
         top: 30px;
         left: -130px;
     }
+    .pr-brands-nav .navbar-nav {
+        overflow-x: scroll;
+    }
+    .pr-brands-nav {
+        position: sticky;
+        top: 5px;
+    }
 } 
