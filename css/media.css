@@ -20,6 +20,16 @@
     .pr-category-page-products .pr-btn-light {
         display: none;
     }
+    .pr-product-item-new-img {
+        background: url(../img/new_item.svg);
+        width: 65%;
+        height: 74%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        flex-shrink: 0;
+        border-radius: 12px;
+    }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1440px) {
@@ -85,7 +95,6 @@
     }
     .pr-sm-navbar {
         margin-bottom: 16px;
-        padding: 0;
     }
     .pr-sm-search {
         display: flex;
@@ -119,6 +128,7 @@
         background-color: #FFF;
         margin-bottom: 24px;
         padding: 12px 0;
+        border-bottom: 1px solid #E4E8F4;
     }
     .pr-main-carousel .carousel-control-prev-icon, 
     .pr-main-carousel .carousel-control-next-icon {
@@ -147,6 +157,9 @@
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
         align-self: stretch;
+    }
+    .pr-products-slick {
+        margin: 0 -6px;
     }
     .pr-product-wrapper {
         padding: 6px;
@@ -276,6 +289,9 @@
     }
     .pr-sm-contact-map {
         margin-bottom: 16px;
+    } 
+    .pr-sm-contact-map iframe {
+        border-radius: 12px;
     }
     .pr-contact-inner .pr-submit-btn {
         margin-bottom: 0;
@@ -504,5 +520,43 @@
     .pr-brands-nav {
         position: sticky;
         top: 5px;
+    }
+    .pr-product-item-new-img {
+        background: url('../img/new_img_sm.svg');
+        width: 50%;
+        height: 100%;
+    }
+    .pr-cart-item-img {
+        width: 35%;
+    }
+    .pr-cart-item-title {
+        font-size: 16px;
+    }
+    .pr-cart-item-desc {
+        height: 50px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .pr-main-wrapper .pr-secondary-navbar {
+        display: none;
+    }
+    .pr-public-offer-wrapper {
+        width: 100%;
+    }
+    .pr-public-offer-wrapper .pr-section-title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .pr-badge-mobile {
+        background-color: var(--active-color);
+    }
+    .pr-badge {
+        width: 16px;
+        height: 16px;
+        top: 7px;
+        right: 13px;
+        font-size: 10px;
+        line-height: 12px;
+        background-color: var(--active-color);
     }
 } 

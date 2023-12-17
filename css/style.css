@@ -227,8 +227,11 @@ button {
 .slick-disabled {
     opacity: .4;
 }
+.pr-products-slick {
+    margin: 0 -12px;
+}
 .pr-product-wrapper {
-    padding: 0.625rem;
+    padding: 12px;
     flex: 0 0 16.5%;
     max-width: 16.5%;
 }
@@ -240,6 +243,7 @@ button {
     overflow: hidden;
     margin-bottom: 1rem;
     border-radius: 12px;
+    border: 1px solid #E4E8F4;
     /* background-image: url(../img/pr_background.png); */
 }
 .pr-product-img a {
@@ -389,6 +393,20 @@ button {
     height: 100%;
     border-radius: 12px;
     padding: 56px 40px;
+    position: relative;
+}
+input::placeholder {
+    color: #A2A0B3 !important;
+}
+.pr-product-item-new-img {
+    background: url('../img/new_item.svg');
+    width: 78%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    flex-shrink: 0;
+    border-radius: 12px;
 }
 .pr-product-new-desc {
     font-weight: 500;
@@ -422,12 +440,16 @@ button {
 .pr-brend-item:nth-last-child(-n+6) {
     margin-bottom: 0;
 }
-.pr-brend-img .img-fluid {
-    border-radius: 12px;
+.pr-brend-img {
+    border: 1px solid #E4E8F4;
     margin-bottom: 16px;
+    border-radius: 12px;
+}
+.pr-brend-img .img-fluid {
     height: 120px;
     width: 100% !important;
     object-fit: cover;
+    border-radius: 12px;
 }
 .pr-brend-title {
     text-align: center;
@@ -521,6 +543,7 @@ button {
 .pr-new-info-img .img-fluid {
     height: 100%;
     object-fit: cover;
+    width: 100%;
 }
 .pr-new-info-desc {
     height: 56px;
@@ -1198,6 +1221,9 @@ button {
 }
 .pr-main-search input::placeholder {
     color: #A2A0B3;
+} 
+textarea::placeholder {
+    color: #A2A0B3 !important;
 }
 .pr-main-search {
     border-radius: 8px;
@@ -1331,7 +1357,7 @@ button {
     display: flex;
     right: 20px;
     bottom: 80px;
-    background-color: #00a0e3;
+    background-color: var(--active-color);
     border-radius: 50%;
     padding: 0.875rem;
     -webkit-transition: 0.7s all cubic-bezier(0.03, 0.88, 0.34, 0.97);
@@ -1344,14 +1370,35 @@ button {
     transform: scale(0);
     z-index: 999;
 }
-  
 #back-top.visible {
     visibility: visible;
     opacity: 0.9;
     -webkit-transform: scale(1);
     transform: scale(1);
 }
-  
 #back-top.visible:hover {
     opacity: 1;
+}
+.pr-badge {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #E73127;
+    border: 2px solid #ffffff;
+    position: absolute;
+    right: -13px;
+    top: -2px;
+}
+.pr-nav-cart {
+    position: relative;
+}
+
+.es-footer-socials .nav .nav-item:last-child a {
+    padding-right: 0;
 }
